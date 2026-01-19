@@ -14,9 +14,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 
--- Keymaps
-require("config.keymaps")
-
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -31,3 +28,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins
 require("lazy").setup("plugins")
+
+-- Keymaps
+require("config.keymaps")
