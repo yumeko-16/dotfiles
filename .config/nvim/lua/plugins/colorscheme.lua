@@ -1,17 +1,23 @@
 return {
   {
-    "rebelot/kanagawa.nvim",
+    "cocopon/iceberg.vim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("kanagawa").setup({
-        transparent = true,
-      })
+      -- Apply colorscheme
+      vim.cmd.colorscheme("iceberg")
 
-      vim.cmd("colorscheme kanagawa-dragon")
-
+      -- Force transparent backgrounds
       local transparent_groups = {
         "Normal",
+        "NormalFloat",
+        "SignColumn",
+        "EndOfBuffer",
+        "MsgArea",
+        "FloatBorder",
+        "LineNr",
+        "CursorLineNr",
+        "FoldColumn",
       }
 
       for _, group in ipairs(transparent_groups) do
