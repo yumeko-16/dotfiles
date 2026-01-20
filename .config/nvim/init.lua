@@ -9,10 +9,24 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.smartindent = true
+vim.opt.list = true
+vim.opt.listchars = {
+  tab = " →",
+  trail = "•",
+}
 vim.opt.wrap = true
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "Whitespace", {
+      fg = "#555555",
+      bg = "NONE",
+    })
+  end,
+})
 
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
