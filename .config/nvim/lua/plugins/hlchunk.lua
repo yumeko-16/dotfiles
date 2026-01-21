@@ -24,7 +24,7 @@ return {
           style = {
             vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
           },
-        }
+        },
       })
     end
   },
