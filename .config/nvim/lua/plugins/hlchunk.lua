@@ -13,17 +13,15 @@ return {
             left_bottom = "╰",
             right_arrow = ">",
           },
-          style = "#806d9c",
+          style = "#adc6ff",
         },
 
         indent = {
           enable = true,
           chars = {
-            "┊",
+            "│",
           },
-          style = {
-            vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
-          },
+          style = "#424551",
         },
       })
     end
