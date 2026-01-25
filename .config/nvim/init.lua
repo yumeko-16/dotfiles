@@ -1,32 +1,5 @@
--- Leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
--- Base options
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.smartindent = true
-vim.opt.list = true
-vim.opt.listchars = {
-  tab = " →",
-  trail = "•",
-}
-vim.opt.wrap = true
-vim.opt.signcolumn = "yes"
-vim.opt.termguicolors = true
-vim.opt.clipboard = "unnamedplus"
-
-vim.api.nvim_create_autocmd("ColorScheme", {
-  callback = function()
-    vim.api.nvim_set_hl(0, "Whitespace", {
-      fg = "#555555",
-      bg = "NONE",
-    })
-  end,
-})
+require("config.options")
+require("config.autocmds")
 
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -42,6 +15,5 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins
 require("lazy").setup("plugins")
-
 -- Keymaps
 require("config.keymaps")
