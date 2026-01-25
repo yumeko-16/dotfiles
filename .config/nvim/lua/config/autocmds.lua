@@ -1,5 +1,3 @@
--- This file is automatically loaded by lazyvim.config.init.
-
 local augroup = vim.api.nvim_create_augroup("UserAutocmds", { clear = true })
 
 vim.api.nvim_create_autocmd("ColorScheme", {
