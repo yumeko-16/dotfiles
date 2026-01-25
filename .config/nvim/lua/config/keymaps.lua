@@ -1,3 +1,5 @@
+-- This file is automatically loaded by lazyvim.config.init
+
 --------------------------------------------------
 -- Disable / Break Default Behaviors
 --------------------------------------------------
