@@ -9,5 +9,10 @@ return {
     -- refer to the configuration section below
     dashboard = { enabled = true },
     indent = { enabled = true },
+    scroll = { enabled = true },
+    zen = { enabled = true },
+  },
+  keys = {
+    { "<leader>z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },
   },
 }
