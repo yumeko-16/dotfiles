@@ -10,6 +10,8 @@ vim.opt.listchars = {
   trail = "•",
 }
 vim.opt.wrap = true
+vim.opt.breakindent = true
+vim.opt.showbreak = "↪ "
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
