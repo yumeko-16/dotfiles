@@ -30,7 +30,6 @@ require("lazy").setup({
     { import = "plugins.colorscheme" },
     { import = "plugins.conform" },
     { import = "plugins.git" },
-    { import = "plugins.nvim-treesitter" },
     { import = "plugins.snacks" },
     { import = "plugins.which-key" },
   },
