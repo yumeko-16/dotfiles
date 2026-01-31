@@ -25,7 +25,6 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    { import = "plugins.mini.indentscope" },
     { import = "plugins.mini.pairs" },
     { import = "plugins.colorscheme" },
     { import = "plugins.conform" },
