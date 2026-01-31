@@ -25,7 +25,14 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    { import = "plugins" },
+    { import = "plugins.mini.indentscope" },
+    { import = "plugins.mini.pairs" },
+    { import = "plugins.colorscheme" },
+    { import = "plugins.conform" },
+    { import = "plugins.git" },
+    { import = "plugins.nvim-treesitter" },
+    { import = "plugins.snacks" },
+    { import = "plugins.which-key" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
