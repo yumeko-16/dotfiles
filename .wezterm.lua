@@ -21,7 +21,7 @@ config.color_scheme = "iceberg-dark"
 
 local act = require "wezterm".action
 config.keys = {
- {
+  {
     mods = 'LEADER',
     key = 's',
     action = act.ShowLauncherArgs { flags = 'WORKSPACES' , title = "Select workspace" },
