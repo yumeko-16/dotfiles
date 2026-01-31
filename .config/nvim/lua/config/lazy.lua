@@ -30,6 +30,7 @@ require("lazy").setup({
     { import = "plugins.conform" },
     { import = "plugins.git" },
     { import = "plugins.lualine" },
+    { import = "plugins.oil" },
     { import = "plugins.snacks" },
     { import = "plugins.which-key" },
   },
