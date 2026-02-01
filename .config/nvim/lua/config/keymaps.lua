@@ -64,5 +64,3 @@ vim.keymap.set("n", "gh", "gT", { desc = "Go to previous tab" })
 vim.keymap.set("n", "gl", "gt", { desc = "Go to next tab" })
 
 vim.keymap.set("n", "<C-n>", "<cmd>noh<CR>", { desc = "Clear search highlight" })
-
-vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
