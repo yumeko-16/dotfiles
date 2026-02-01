@@ -12,7 +12,6 @@ return {
     -- refer to the configuration section below
     dashboard = { enabled = true },
     indent = { enabled = true },
-    notifier = { enabled = true },
     scroll = { enabled = true },
     zen = {
       enabled = true,
