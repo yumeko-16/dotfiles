@@ -31,6 +31,7 @@ require("lazy").setup({
     { import = "plugins.git" },
     { import = "plugins.lualine" },
     { import = "plugins.noice" },
+    { import = "plugins.nvim-treesitter" },
     { import = "plugins.oil" },
     { import = "plugins.snacks" },
     { import = "plugins.which-key" },
