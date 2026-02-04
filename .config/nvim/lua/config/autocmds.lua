@@ -18,5 +18,7 @@ vim.api.nvim_create_autocmd('FileType', {
     "typescript",
     "css",
   },
-  callback = function() vim.treesitter.start() end,
+  callback = function()
+    pcall(vim.treesitter.start)
+  end,
 })
