@@ -1,15 +1,16 @@
 return {
-  "cocopon/iceberg.vim",
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
-  config = function()
-    vim.cmd.colorscheme("iceberg")
-
-    vim.cmd([[
-      highlight Normal     guibg=NONE
-      highlight NormalNC   guibg=NONE
-      highlight SignColumn guibg=NONE
-      highlight EndOfBuffer guibg=NONE
-    ]])
-  end
+  opts = {
+    style = "moon",
+    transparent = true,
+    styles = {
+      comments = { italic = true },
+    },
+  },
+  config = function(_, opts)
+    require("tokyonight").setup(opts)
+    vim.cmd.colorscheme("tokyonight")
+  end,
 }
