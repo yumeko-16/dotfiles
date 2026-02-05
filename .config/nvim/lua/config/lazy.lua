@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "plugins.mini.pairs" },
     { import = "plugins.colorscheme" },
     { import = "plugins.conform" },
+    { import = "plugins.diffview" },
     { import = "plugins.git" },
     { import = "plugins.lualine" },
     { import = "plugins.noice" },
