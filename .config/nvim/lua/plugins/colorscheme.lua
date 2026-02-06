@@ -1,16 +1,12 @@
 return {
-  "folke/tokyonight.nvim",
+  "rebelot/kanagawa.nvim",
   lazy = false,
   priority = 1000,
   opts = {
-    style = "moon",
     transparent = true,
-    styles = {
-      comments = { italic = true },
-    },
   },
   config = function(_, opts)
-    require("tokyonight").setup(opts)
-    vim.cmd.colorscheme("tokyonight")
+    require("kanagawa").setup(opts)
+    vim.cmd("colorscheme kanagawa")
   end,
 }
