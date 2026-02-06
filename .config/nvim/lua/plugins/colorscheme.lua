@@ -1,12 +1,14 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "EdenEast/nightfox.nvim",
   lazy = false,
   priority = 1000,
   opts = {
-    transparent = true,
+    options = {
+      transparent = true,
+    },
   },
   config = function(_, opts)
-    require("kanagawa").setup(opts)
-    vim.cmd("colorscheme kanagawa")
+    require("nightfox").setup(opts)
+    vim.cmd("colorscheme terafox")
   end,
 }
