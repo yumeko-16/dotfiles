@@ -31,6 +31,7 @@ require("lazy").setup({
     { import = "plugins.diffview" },
     { import = "plugins.git" },
     { import = "plugins.lualine" },
+    { import = "plugins.mason" },
     { import = "plugins.noice" },
     { import = "plugins.nvim-treesitter" },
     { import = "plugins.oil" },
