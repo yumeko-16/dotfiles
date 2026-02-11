@@ -11,6 +11,26 @@ return {
     end,
   },
   {
+    "petertriho/nvim-scrollbar",
+    config = function()
+      require("scrollbar").setup({
+        handlers = {
+          gitsigns = true,
+        },
+        marks = {
+          GitAdd = {
+            text = "█",
+          },
+          GitChange = {
+            text = "█",
+          },
+        },
+      })
+
+      require("scrollbar.handlers.gitsigns").setup()
+    end,
+  },
+  {
     "tpope/vim-fugitive",
     cmd = { "Git", "Gdiffsplit" },
   },
