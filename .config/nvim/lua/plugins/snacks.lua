@@ -3,7 +3,13 @@ return {
   priority = 1000,
   lazy = false,
   keys = {
-    { "<leader>z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },
+    {
+      "<leader>z",
+      function()
+        Snacks.zen()
+      end,
+      desc = "Toggle Zen Mode",
+    },
   },
   ---@type snacks.Config
   opts = {
@@ -19,6 +25,14 @@ return {
         dim = false,
         git_signs = false,
         mini_diff_signs = false,
+      },
+    },
+    picker = {
+      sources = {
+        files = {
+          hidden = true,
+          no_ignore = true,
+        },
       },
     },
   },
