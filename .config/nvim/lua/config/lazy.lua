@@ -32,6 +32,7 @@ require("lazy").setup({
     { import = "plugins.git" },
     { import = "plugins.lualine" },
     { import = "plugins.mason-lspconfig" },
+    { import = "plugins.cmp" },
     { import = "plugins.mason" },
     { import = "plugins.noice" },
     { import = "plugins.nvim-lspconfig" },
