@@ -3,13 +3,13 @@ return {
   opts = {
     ensure_installed = {
       "lua_ls",
-      "jsonls",
-      "taplo",
-      "ts_ls",
+      "html",
       "cssls",
       "somesass_ls",
-      "html",
       "emmet_ls",
+      "ts_ls",
+      "jsonls",
+      "taplo",
     },
   },
   dependencies = {
