@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -7,8 +7,8 @@ local config = wezterm.config_builder()
 -- Font
 config.font_size = 16
 config.font = wezterm.font("HackGen35 console NF", {
-	weight = "Regular",
-	stretch = "Normal",
+  weight = "Regular",
+  stretch = "Normal",
 })
 config.line_height = 1.4
 
@@ -25,12 +25,12 @@ config.window_padding = {
 -- Color scheme
 config.color_scheme = "iceberg-dark"
 
-local act = require "wezterm".action
+local act = require("wezterm").action
 config.keys = {
   {
-    mods = 'LEADER',
-    key = 's',
-    action = act.ShowLauncherArgs { flags = 'WORKSPACES' , title = "Select workspace" },
+    mods = "LEADER",
+    key = "s",
+    action = act.ShowLauncherArgs({ flags = "WORKSPACES", title = "Select workspace" }),
   },
 }
 
