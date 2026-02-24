@@ -4,7 +4,6 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- Font
 config.font_size = 16
 config.font = wezterm.font("HackGen35 console NF", {
   weight = "Regular",
@@ -12,14 +11,9 @@ config.font = wezterm.font("HackGen35 console NF", {
 })
 config.line_height = 1.4
 config.use_ime = true
-
--- Color scheme
 config.color_scheme = "iceberg-dark"
-
--- Background transparency
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 0
-
 config.window_decorations = "RESIZE"
 config.window_padding = {
   left = 0,
