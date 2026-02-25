@@ -1,8 +1,9 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
-
--- This will hold the configuration.
 local config = wezterm.config_builder()
+
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+  config.default_prog = { "bash", "--login", "-i" }
+end
 
 config.font_size = 16
 config.font = wezterm.font("HackGen35 console NF", {
