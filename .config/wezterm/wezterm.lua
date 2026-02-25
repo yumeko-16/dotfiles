@@ -7,7 +7,7 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 end
 
 config.font_size = 16
-config.font = wezterm.font("HackGen35 console NF", {
+config.font = wezterm.font("HackGen35 Console NF", {
   weight = "Regular",
   stretch = "Normal",
 })
