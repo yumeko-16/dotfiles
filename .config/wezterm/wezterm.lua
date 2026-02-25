@@ -3,6 +3,7 @@ local config = wezterm.config_builder()
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_prog = { "bash", "--login", "-i" }
+  config.font_size = 12
 end
 
 config.font_size = 16
