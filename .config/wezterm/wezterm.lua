@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local act = wezterm.action
 local keys = require("keymaps")
 require("on")
 
@@ -11,6 +12,12 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
     MSYSTEM = "MINGW64",
   }
   config.font_size = 12
+
+  table.insert(config.keys, {
+    key = "v",
+    mods = "CTRL",
+    action = act.PasteFrom("Clipboard"),
+  })
 else
   config.font_size = 16
 end
