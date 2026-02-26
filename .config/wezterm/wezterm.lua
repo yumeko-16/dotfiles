@@ -3,10 +3,14 @@ local config = wezterm.config_builder()
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_prog = { "bash", "--login", "-i" }
+  config.set_environment_variables = {
+    MSYSTEM = "MINGW64",
+  }
   config.font_size = 12
+else
+  config.font_size = 16
 end
 
-config.font_size = 16
 config.font = wezterm.font("HackGen35 Console NF", {
   weight = "Regular",
   stretch = "Normal",
