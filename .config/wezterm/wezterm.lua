@@ -1,5 +1,9 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local keys = require("keymaps")
+require("on")
+
+config.keys = keys
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_prog = { "bash", "--login", "-i" }
@@ -18,8 +22,8 @@ config.font = wezterm.font("HackGen35 Console NF", {
 config.line_height = 1.4
 config.use_ime = true
 config.color_scheme = "iceberg-dark"
-config.window_background_opacity = 0.95
-config.macos_window_background_blur = 0
+config.window_background_opacity = 0.85
+config.macos_window_background_blur = 20
 config.window_decorations = "RESIZE"
 config.window_padding = {
   left = 0,
@@ -31,43 +35,6 @@ config.show_new_tab_button_in_tab_bar = false
 config.colors = {
   tab_bar = {
     inactive_tab_edge = "none",
-  },
-}
-local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
-local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
-
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-  local background = "#5c6d74"
-  local foreground = "#FFFFFF"
-  local edge_background = "none"
-
-  if tab.is_active then
-    background = "#ae8b2d"
-    foreground = "#FFFFFF"
-  end
-
-  local edge_foreground = background
-  local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
-
-  return {
-    { Background = { Color = edge_background } },
-    { Foreground = { Color = edge_foreground } },
-    { Text = SOLID_LEFT_ARROW },
-    { Background = { Color = background } },
-    { Foreground = { Color = foreground } },
-    { Text = title },
-    { Background = { Color = edge_background } },
-    { Foreground = { Color = edge_foreground } },
-    { Text = SOLID_RIGHT_ARROW },
-  }
-end)
-
-local act = require("wezterm").action
-config.keys = {
-  {
-    mods = "LEADER",
-    key = "s",
-    action = act.ShowLauncherArgs({ flags = "WORKSPACES", title = "Select workspace" }),
   },
 }
 
