@@ -3,7 +3,7 @@ return {
     "cocopon/iceberg.vim",
     lazy = false,
     priority = 1000,
-    enabled = true,
+    enabled = false,
     config = function()
       vim.opt.termguicolors = true
       vim.cmd.colorscheme("iceberg")
@@ -28,7 +28,7 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
-    enabled = false,
+    enabled = true,
     opts = {
       transparent = true,
       theme = "dragon",
