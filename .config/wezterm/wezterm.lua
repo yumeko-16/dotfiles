@@ -30,6 +30,7 @@ config.line_height = 1.4
 config.use_ime = true
 config.color_scheme = "iceberg-dark"
 config.window_background_opacity = 0.9
+config.win32_system_backdrop = "Acrylic"
 config.macos_window_background_blur = 20
 config.window_decorations = "RESIZE"
 config.window_padding = {
