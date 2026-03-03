@@ -2,30 +2,15 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local act = wezterm.action
 local keys = require("keymaps")
+local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
 require("on")
 
 config.keys = keys
-
-if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-  config.default_prog = { "bash", "--login", "-i" }
-  config.set_environment_variables = {
-    MSYSTEM = "MINGW64",
-  }
-  config.font_size = 12
-
-  table.insert(config.keys, {
-    key = "v",
-    mods = "CTRL",
-    action = act.PasteFrom("Clipboard"),
-  })
-else
-  config.font_size = 16
-end
-
 config.font = wezterm.font("HackGen35 Console NF", {
   weight = "Regular",
   stretch = "Normal",
 })
+config.font_size = 16
 config.line_height = 1.4
 config.use_ime = true
 config.color_scheme = "iceberg-dark"
@@ -45,5 +30,19 @@ config.colors = {
     inactive_tab_edge = "none",
   },
 }
+
+if is_windows then
+  config.default_prog = { "bash", "--login", "-i" }
+  config.set_environment_variables = {
+    MSYSTEM = "MINGW64",
+  }
+  config.font_size = 12
+
+  table.insert(config.keys, {
+    key = "v",
+    mods = "CTRL",
+    action = act.PasteFrom("Clipboard"),
+  })
+end
 
 return config
