@@ -2,13 +2,6 @@
   "files.encoding": "utf8", // ファイルの読み取り/書き込みで使用する規定の文字セット エンコーディング
   "workbench.startupEditor": "none", // 起動時に表示するエディター（none：エディターを開かない）
   "security.workspace.trust.enabled": false,
-
-  // ===================================
-  // UI
-  // ===================================
-
-  // Theme
-  // -----------------------------------
   "workbench.colorTheme": "Iceberg",
 
   // Title Bar
@@ -87,7 +80,7 @@
   // -----------------------------------
   "html.format.templating": true, // EJSのフォーマット設定
   "files.associations": {
-    "*.ejs ": "html"
+    "*.ejs ": "html",
   },
 
   // Svelte
@@ -103,11 +96,11 @@
   // Emmet
   // ===================================
   "emmet.variables": {
-    "lang": "ja"
+    "lang": "ja",
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "ejs": "html"
+    "ejs": "html",
   },
 
   // ===================================
@@ -133,15 +126,15 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "e"],
-      "commands": [{ "command": "workbench.action.toggleSidebarVisibility" }]
+      "commands": [{ "command": "workbench.action.toggleSidebarVisibility" }],
     },
     {
       "before": ["<Leader>", ":"],
-      "commands": [{ "command": "workbench.action.showCommands" }]
+      "commands": [{ "command": "workbench.action.showCommands" }],
     }, // コマンドパレット
     {
       "before": ["<Leader>", ";"],
-      "commands": [{ "command": "workbench.action.quickOpen" }]
+      "commands": [{ "command": "workbench.action.quickOpen" }],
     }, // ファイル検索
 
     // -- diffモード時のフォーカススイッチ
@@ -149,18 +142,18 @@
       "before": ["<C-w>", "h"],
       "commands": [
         {
-          "command": "workbench.action.compareEditor.focusSecondarySide"
-        }
-      ]
+          "command": "workbench.action.compareEditor.focusSecondarySide",
+        },
+      ],
     },
     {
       "before": ["<C-w>", "l"],
       "commands": [
         {
-          "command": "workbench.action.compareEditor.focusPrimarySide"
-        }
-      ]
-    }
+          "command": "workbench.action.compareEditor.focusPrimarySide",
+        },
+      ],
+    },
   ],
 
   // -- zenhan
@@ -169,7 +162,7 @@
   "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\zenhan\\bin64\\zenhan.exe 0",
   "vim.autoSwitchInputMethod.switchIMCmd": "D:\\zenhan\\bin64\\zenhan.exe {im}",
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1,
   },
 
   // PHP Intelephense
@@ -246,7 +239,7 @@
     "Zend OPcache",
     "zip",
     "zlib",
-    "wordpress"
+    "wordpress",
   ],
   "intelephense.diagnostics.undefinedClassConstants": false,
   "intelephense.diagnostics.undefinedConstants": false,
@@ -257,5 +250,5 @@
 
   // Svelte for VS Code
   // -----------------------------------
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
 }
