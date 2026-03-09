@@ -41,6 +41,7 @@ require("lazy").setup({
     { import = "plugins.nvim-treesitter" },
     { import = "plugins.oil" },
     { import = "plugins.snacks" },
+    { import = "plugins.vim-better-whitespace" },
     { import = "plugins.which-key" },
   },
   -- Configure any other settings here. See the documentation for more details.
