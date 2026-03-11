@@ -12,23 +12,28 @@ return {
   },
   {
     "petertriho/nvim-scrollbar",
-    config = function()
-      require("scrollbar").setup({
-        handlers = {
-          gitsigns = true,
-        },
-        marks = {
-          GitAdd = {
-            text = "█",
-          },
-          GitChange = {
-            text = "█",
-          },
-        },
-      })
+    opts = {
+      marks = {
+        GitAdd = { text = "█" },
+        GitChange = { text = "█" },
+      },
+      handlers = {
+        gitsigns = true,
+      },
+    },
 
+    config = function(_, opts)
+      require("scrollbar").setup(opts)
       require("scrollbar.handlers.gitsigns").setup()
 
+      vim.api.nvim_set_hl(0, "ScrollbarHandle", {
+        fg = "#2e313f",
+        bg = "#2e313f",
+      })
+      vim.api.nvim_set_hl(0, "ScrollbarCursorHandle", {
+        fg = "#3e445e",
+        bg = "#3e445e",
+      })
       vim.api.nvim_set_hl(0, "ScrollbarGitAdd", { link = "GitGutterAdd" })
       vim.api.nvim_set_hl(0, "ScrollbarGitChange", { link = "GitGutterChange" })
       vim.api.nvim_set_hl(0, "ScrollbarGitDelete", { link = "GitGutterDelete" })
