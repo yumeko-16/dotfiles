@@ -3,7 +3,7 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 local keys = require("keymaps")
 local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
-local program_files = os.getenv("ProgramFiles")
+local program_files = os.getenv("LOCALAPPDATA")
 require("on")
 
 config.keys = keys
@@ -34,7 +34,7 @@ config.colors = {
 
 if is_windows then
   config.default_prog = {
-    program_files .. "/Git/bin/bash.exe",
+    program_files .. "/Programs/Git/bin/bash.exe",
     "--login",
     "-i",
   }
