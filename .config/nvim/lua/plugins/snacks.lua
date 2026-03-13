@@ -2,15 +2,7 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
-  keys = {
-    {
-      "<leader>z",
-      function()
-        Snacks.zen()
-      end,
-      desc = "Toggle Zen Mode",
-    },
-  },
+
   ---@type snacks.Config
   opts = {
     -- your configuration comes here
@@ -33,6 +25,31 @@ return {
           no_ignore = true,
         },
       },
+    },
+  },
+
+  keys = {
+    -- find
+    {
+      "<leader>fb",
+      function()
+        Snacks.picker.buffers()
+      end,
+      desc = "Buffers",
+    },
+    {
+      "<leader>fr",
+      function()
+        Snacks.picker.recent()
+      end,
+      desc = "Recent",
+    },
+    {
+      "<leader>z",
+      function()
+        Snacks.zen()
+      end,
+      desc = "Toggle Zen Mode",
     },
   },
 }
