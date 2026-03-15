@@ -25,7 +25,6 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-config.show_new_tab_button_in_tab_bar = false
 config.colors = {
   tab_bar = {
     inactive_tab_edge = "none",
