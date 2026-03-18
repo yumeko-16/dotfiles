@@ -1,5 +1,3 @@
-# User configuration
-
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
@@ -7,7 +5,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 
-# 少し凝った zshrc
 # License : MIT
 # http://mollifier.mit-license.org/
 
@@ -77,8 +74,8 @@ zstyle ':vcs_info:*' formats '%F{green}(%s)-[%b]%f'
 zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
 
 function _update_vcs_info_msg() {
-    LANG=en_US.UTF-8 vcs_info
-    RPROMPT="${vcs_info_msg_0_}"
+  LANG=en_US.UTF-8 vcs_info
+  RPROMPT="${vcs_info_msg_0_}"
 }
 add-zsh-hook precmd _update_vcs_info_msg
 
@@ -153,28 +150,28 @@ alias nv='nvim'
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then
-    # Mac
-    alias -g C='| pbcopy'
+  # Mac
+  alias -g C='| pbcopy'
 elif which xsel >/dev/null 2>&1 ; then
-    # Linux
-    alias -g C='| xsel --input --clipboard'
+  # Linux
+  alias -g C='| xsel --input --clipboard'
 elif which putclip >/dev/null 2>&1 ; then
-    # Cygwin
-    alias -g C='| putclip'
+  # Cygwin
+  alias -g C='| putclip'
 fi
 
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
+  darwin*)
+    #Mac用の設定
+    export CLICOLOR=1
+    alias ls='ls -G -F'
+    ;;
+  linux*)
+    #Linux用の設定
+    alias ls='ls -F --color=auto'
+    ;;
 esac
 
 # vim:set ft=zsh:
@@ -220,10 +217,10 @@ zplug "zsh-users/zsh-history-substring-search"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
 fi
 
 # Then, source plugins and add commands to $PATH
