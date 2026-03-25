@@ -11,8 +11,8 @@ return {
       vim.cmd([[
         highlight Normal       guibg=NONE
         highlight NormalNC     guibg=NONE
-        highlight DiffAdd      guifg=NONE guibg=#1f3f1f
-        highlight DiffDelete   guifg=NONE guibg=#5f0000
+        highlight DiffAdd      guifg=NONE guibg=#1e2a22
+        highlight DiffDelete   guifg=NONE guibg=#2a1e1e
         highlight DiffChange   guifg=NONE guibg=#3f464d
         highlight DiffText     guifg=NONE guibg=#586069
       ]])
