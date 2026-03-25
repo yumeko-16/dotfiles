@@ -43,6 +43,7 @@ require("lazy").setup({
     { import = "plugins.snacks" },
     { import = "plugins.vim-better-whitespace" },
     { import = "plugins.which-key" },
+    { import = "plugins.winresizer" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
