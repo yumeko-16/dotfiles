@@ -42,6 +42,7 @@ require("lazy").setup({
     { import = "plugins.oil" },
     { import = "plugins.snacks" },
     { import = "plugins.vim-better-whitespace" },
+    { import = "plugins.vim-easymotion" },
     { import = "plugins.which-key" },
     { import = "plugins.winresizer" },
   },
