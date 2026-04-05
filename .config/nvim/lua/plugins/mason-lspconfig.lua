@@ -6,6 +6,7 @@ return {
       "html",
       "cssls",
       "somesass_ls",
+      "stylelint_lsp",
       "emmet_ls",
       "ts_ls",
       "jsonls",
