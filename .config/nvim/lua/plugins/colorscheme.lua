@@ -3,7 +3,7 @@ return {
     "cocopon/iceberg.vim",
     lazy = false,
     priority = 1000,
-    enabled = true,
+    enabled = false,
     config = function()
       vim.opt.termguicolors = true
       vim.cmd.colorscheme("iceberg")
@@ -13,8 +13,8 @@ return {
         highlight NormalNC     guibg=NONE
         highlight DiffAdd      guifg=NONE guibg=#1e2a22
         highlight DiffDelete   guifg=NONE guibg=#2a1e1e
-        highlight DiffChange   guifg=NONE guibg=#3f464d
-        highlight DiffText     guifg=NONE guibg=#586069
+        highlight DiffChange   guifg=NONE guibg=#292f35
+        highlight DiffText     guifg=NONE guibg=#3a4550
       ]])
 
       vim.api.nvim_set_hl(0, "NotifyBackground", { bg = "#161821" })
@@ -28,7 +28,7 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
-    enabled = false,
+    enabled = true,
     opts = {
       transparent = true,
       theme = "dragon",
