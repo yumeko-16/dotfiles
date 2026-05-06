@@ -8,6 +8,7 @@ return {
       "somesass_ls",
       "stylelint_lsp",
       "emmet_ls",
+      "eslint-lsp",
       "ts_ls",
       "jsonls",
       "taplo",
