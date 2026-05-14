@@ -26,7 +26,6 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins.mini.pairs" },
-    { import = "plugins.FTerm" },
     { import = "plugins.cmp" },
     { import = "plugins.colorscheme" },
     { import = "plugins.conform" },
