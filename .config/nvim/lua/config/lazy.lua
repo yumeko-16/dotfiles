@@ -37,7 +37,6 @@ require("lazy").setup({
     { import = "plugins.noice" },
     { import = "plugins.nvim-colorizer" },
     { import = "plugins.nvim-lspconfig" },
-    { import = "plugins.nvim-treesitter" },
     { import = "plugins.oil" },
     { import = "plugins.snacks" },
     { import = "plugins.vim-better-whitespace" },
