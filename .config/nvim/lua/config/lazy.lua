@@ -31,6 +31,7 @@ require("lazy").setup({
     { import = "plugins.conform" },
     { import = "plugins.diffview" },
     { import = "plugins.git" },
+    { import = "plugins.gitsigns" },
     { import = "plugins.lualine" },
     { import = "plugins.mason-lspconfig" },
     { import = "plugins.mason" },
