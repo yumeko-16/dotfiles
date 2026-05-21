@@ -35,7 +35,6 @@ require("lazy").setup({
     { import = "plugins.mason-lspconfig" },
     { import = "plugins.mason" },
     { import = "plugins.noice" },
-    { import = "plugins.nvim-highlight-colors" },
     { import = "plugins.nvim-lspconfig" },
     { import = "plugins.nvim-scrollbar" },
     { import = "plugins.oil" },
