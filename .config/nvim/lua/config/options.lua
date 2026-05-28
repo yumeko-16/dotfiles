@@ -18,3 +18,4 @@ opt.breakindent = true
 opt.signcolumn = "yes"
 opt.termguicolors = true
 opt.clipboard = "unnamedplus"
+opt.hlsearch = true

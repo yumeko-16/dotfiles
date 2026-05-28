@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 --------------------------------------------------
 -- Disable / Break Default Behaviors
 --------------------------------------------------
@@ -64,3 +67,43 @@ vim.keymap.set("n", "gh", "gT", { desc = "Go to previous tab" })
 vim.keymap.set("n", "gl", "gt", { desc = "Go to next tab" })
 
 vim.keymap.set("n", "<C-n>", "<cmd>noh<CR>", { desc = "Clear search highlight" })
+
+vim.keymap.set("n", "<Leader><Leader>f", "<Plug>(easymotion-bd-f)", {})
+vim.keymap.set("n", "<Leader><Leader>w", "<Plug>(easymotion-bd-w)", {})
+
+vim.keymap.set("n", "<leader>pu", function()
+  vim.notify("Updating plugins...")
+  vim.pack.update()
+end)
+
+vim.keymap.set("n", "<leader>fb", function()
+  Snacks.picker.buffers()
+end, { desc = "Buffers" })
+
+vim.keymap.set("n", "<leader>fc", function()
+  Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+end, { desc = "Find Config File" })
+
+vim.keymap.set("n", "<leader>ff", function()
+  Snacks.picker.files()
+end, { desc = "Find Files" })
+
+vim.keymap.set("n", "<leader>fg", function()
+  Snacks.picker.git_files()
+end, { desc = "Find Git Files" })
+
+vim.keymap.set("n", "<leader>fp", function()
+  Snacks.picker.projects()
+end, { desc = "Projects" })
+
+vim.keymap.set("n", "<leader>fr", function()
+  Snacks.picker.recent()
+end, { desc = "Recent" })
+
+vim.keymap.set("n", "<leader>gl", function()
+  require("gitgraph").draw({}, { all = true, max_count = 5000 })
+end, { desc = "GitGraph - Draw" })
+
+vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", {
+  desc = "Open parent directory",
+})
