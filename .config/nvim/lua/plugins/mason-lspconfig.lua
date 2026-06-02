@@ -4,7 +4,6 @@ require("mason-lspconfig").setup({
     "html",
     "cssls",
     "somesass_ls",
-    "stylelint_lsp",
     "emmet_ls",
     "eslint",
     "ts_ls",
