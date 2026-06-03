@@ -5,8 +5,8 @@ require("conform").setup({
     typescript = { "prettierd", "prettier", stop_after_first = true },
     javascriptreact = { "prettierd", "prettier", stop_after_first = true },
     typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-    css = { "stylelint", "prettierd", "prettier" },
-    scss = { "stylelint", "prettierd", "prettier" },
+    css = { "prettierd", "prettier", "stylelint" },
+    scss = { "prettierd", "prettier", "stylelint" },
     html = { "prettierd", "prettier", stop_after_first = true },
   },
   format_on_save = {
