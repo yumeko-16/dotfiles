@@ -16,6 +16,7 @@ vim.lsp.config("lua_ls", {
 
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("html")
+vim.lsp.enable("stylelint_lsp")
 vim.lsp.enable("somesass_ls")
 vim.lsp.enable("emmet_ls")
 vim.lsp.enable("eslint")
