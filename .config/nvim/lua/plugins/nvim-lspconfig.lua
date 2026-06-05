@@ -14,6 +14,14 @@ vim.lsp.config("lua_ls", {
   },
 })
 
+vim.lsp.config("stylelint_lsp", {
+  settings = {
+    stylelint = {
+      validate = { "css", "scss", "less", "postcss" },
+    },
+  },
+})
+
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("html")
 vim.lsp.enable("stylelint_lsp")
