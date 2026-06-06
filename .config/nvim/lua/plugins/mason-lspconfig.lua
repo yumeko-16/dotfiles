@@ -9,4 +9,5 @@ require("mason-lspconfig").setup({
     "jsonls",
     "taplo",
   },
+  automatic_enable = false,
 })
