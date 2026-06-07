@@ -5,11 +5,22 @@ require("conform").setup({
     typescript = { "prettierd", "prettier", stop_after_first = true },
     javascriptreact = { "prettierd", "prettier", stop_after_first = true },
     typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-    css = { "prettierd", "prettier", "stylelint" },
-    scss = { "prettierd", "prettier", "stylelint" },
+    css = { "prettierd", "prettier", stop_after_first = true },
+    scss = { "prettierd", "prettier", stop_after_first = true },
     html = { "prettierd", "prettier", stop_after_first = true },
   },
+
   format_on_save = {
     timeout_ms = 3000,
   },
+
+  format_after_save = function(bufnr)
+    local ft = vim.bo[bufnr].filetype
+    if ft == "css" or ft == "scss" then
+      return {
+        async = true,
+        formatters = { "stylelint" },
+      }
+    end
+  end,
 })
