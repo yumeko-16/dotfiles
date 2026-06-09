@@ -2,7 +2,7 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "html",
-    "somesass_ls",
+    "cssls",
     "emmet_ls",
     "eslint",
     "ts_ls",
