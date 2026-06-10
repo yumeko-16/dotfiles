@@ -16,9 +16,7 @@ vim.api.nvim_set_hl(0, "GitGraphBranch3", { fg = "#b4be82" })
 vim.api.nvim_set_hl(0, "GitGraphBranch4", { fg = "#89b8c2" })
 vim.api.nvim_set_hl(0, "GitGraphBranch5", { fg = "#c6a0f6" })
 vim.api.nvim_set_hl(0, "GitGraphBranch6", { fg = "#f5c2e7" })
-vim.api.nvim_set_hl(0, "GitGraphBranchName", {
-  fg = "#e4aa80",
-})
+vim.api.nvim_set_hl(0, "GitGraphBranchName", { fg = "#e4aa80" })
 
 require("notify").setup({
   background_colour = "#161821",
