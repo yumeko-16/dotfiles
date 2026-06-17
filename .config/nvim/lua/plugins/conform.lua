@@ -1,4 +1,5 @@
 local prettier = { "prettierd", "prettier", stop_after_first = true }
+local util = require("conform.util")
 
 require("conform").setup({
   formatters_by_ft = {
@@ -28,7 +29,12 @@ require("conform").setup({
 
   formatters = {
     stylelint = {
-      command = vim.fn.executable("stylelint") == 1 and "stylelint" or "stylelint.cmd",
+      command = function(ctx)
+        return util.find_executable({
+          "node_modules/.bin/stylelint",
+          "stylelint",
+        }, ctx)
+      end,
       args = { "--fix", "--stdin", "--stdin-filename", "$FILENAME" },
       stdin = true,
     },
