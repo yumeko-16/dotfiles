@@ -24,18 +24,4 @@ else
   })
 end
 
-if is_windows then
-  table.insert(keys, {
-    key = "b",
-    mods = "CTRL|SHIFT",
-    action = act.EmitEvent("toggle-blur"),
-  })
-else
-  table.insert(keys, {
-    key = "b",
-    mods = "CMD|SHIFT",
-    action = act.EmitEvent("toggle-blur"),
-  })
-end
-
 return keys
