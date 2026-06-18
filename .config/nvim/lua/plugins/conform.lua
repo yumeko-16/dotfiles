@@ -1,5 +1,6 @@
 local prettier = { "prettierd", "prettier", stop_after_first = true }
 local util = require("conform.util")
+local stylelint_cmd = vim.fn.has("win32") == 1 and "stylelint.cmd" or "stylelint"
 
 require("conform").setup({
   formatters_by_ft = {
@@ -29,14 +30,10 @@ require("conform").setup({
 
   formatters = {
     stylelint = {
-      command = function(ctx)
-        return util.find_executable({
-          "node_modules/.bin/stylelint",
-          "stylelint",
-        }, ctx)
-      end,
-      args = { "--fix", "--stdin", "--stdin-filename", "$FILENAME" },
-      stdin = true,
+      command = util.find_executable({
+        "node_modules/.bin/stylelint.cmd",
+        "node_modules/.bin/stylelint",
+      }, stylelint_cmd),
     },
   },
 })
