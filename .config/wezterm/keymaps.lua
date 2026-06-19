@@ -1,6 +1,5 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
-local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
 
 local keys = {
   {
@@ -10,18 +9,10 @@ local keys = {
   },
 }
 
-if is_windows then
-  table.insert(keys, {
-    key = "o",
-    mods = "CTRL|SHIFT",
-    action = act.EmitEvent("toggle-opacity"),
-  })
-else
-  table.insert(keys, {
-    key = "o",
-    mods = "CMD|SHIFT",
-    action = act.EmitEvent("toggle-opacity"),
-  })
-end
+table.insert(keys, {
+  key = "]",
+  mods = "CTRL",
+  action = act.EmitEvent("toggle-opacity"),
+})
 
 return keys
