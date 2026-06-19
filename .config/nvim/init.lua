@@ -8,6 +8,7 @@ require("config.filetype")
 
 vim.pack.add({
   "https://github.com/MunifTanjim/nui.nvim",
+  "https://github.com/acidsugarx/babel.nvim",
   -- "https://github.com/cocopon/iceberg.vim",
   "https://github.com/easymotion/vim-easymotion",
   "https://github.com/folke/noice.nvim",
@@ -53,6 +54,7 @@ require("plugins.gitgraph")
 require("plugins.mini.pairs")
 require("plugins.vim-better-whitespace")
 require("plugins.conform")
+require("plugins.babel")
 require("plugins.kanagawa")
 -- require("plugins.iceberg")
 require("plugins.hlslens")
