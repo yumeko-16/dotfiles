@@ -31,6 +31,7 @@ vim.pack.add({
   "https://github.com/petertriho/nvim-scrollbar",
   "https://github.com/rcarriga/nvim-notify",
   "https://github.com/rebelot/kanagawa.nvim",
+  "https://github.com/romus204/tree-sitter-manager.nvim",
   "https://github.com/simeji/winresizer",
   "https://github.com/sindrets/diffview.nvim",
   "https://github.com/stevearc/conform.nvim",
@@ -55,6 +56,7 @@ require("plugins.mini.pairs")
 require("plugins.vim-better-whitespace")
 require("plugins.conform")
 require("plugins.babel")
+require("plugins.tree-sitter-manager")
 require("plugins.kanagawa")
 -- require("plugins.iceberg")
 require("plugins.hlslens")
