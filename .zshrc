@@ -174,6 +174,5 @@ fi
 # Then, source plugins and add commands to $PATH
 zplug load --verbose
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export TERM=xterm-256color
+eval "$(/Users/maenotomohiro/.local/bin/mise activate zsh)"
