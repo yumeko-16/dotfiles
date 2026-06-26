@@ -9,7 +9,7 @@ require("config.filetype")
 vim.pack.add({
   "https://github.com/MunifTanjim/nui.nvim",
   "https://github.com/acidsugarx/babel.nvim",
-  -- "https://github.com/cocopon/iceberg.vim",
+  "https://github.com/cocopon/iceberg.vim",
   "https://github.com/easymotion/vim-easymotion",
   "https://github.com/folke/noice.nvim",
   "https://github.com/folke/snacks.nvim",
@@ -30,7 +30,6 @@ vim.pack.add({
   "https://github.com/nvim-tree/nvim-web-devicons",
   "https://github.com/petertriho/nvim-scrollbar",
   "https://github.com/rcarriga/nvim-notify",
-  "https://github.com/rebelot/kanagawa.nvim",
   "https://github.com/romus204/tree-sitter-manager.nvim",
   "https://github.com/simeji/winresizer",
   "https://github.com/sindrets/diffview.nvim",
@@ -57,6 +56,5 @@ require("plugins.vim-better-whitespace")
 require("plugins.conform")
 require("plugins.babel")
 require("plugins.tree-sitter-manager")
-require("plugins.kanagawa")
--- require("plugins.iceberg")
+require("plugins.iceberg")
 require("plugins.hlslens")
