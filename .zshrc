@@ -1,11 +1,3 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH="$HOME/.yarn/bin:$PATH"
-export LANG=ja_JP.UTF-8
-
 autoload -Uz colors
 colors
 
