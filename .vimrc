@@ -6,42 +6,27 @@ scriptencoding utf-8
 "====================================
 call plug#begin('~/.vim/plugged')
 
-" スタート画面
 Plug 'mhinz/vim-startify'
-" -- Font
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'ryanoasis/vim-devicons'
-" -- Color scheme
 Plug 'cocopon/iceberg.vim'
-" StatusLineで使用
 Plug 'arcticicestudio/nord-vim'
-" -- Appearance
 Plug 'itchyny/lightline.vim'
 Plug 'rickhowe/diffchar.vim'
-" Plug 'Yggdroot/indentLine'
 Plug 'preservim/vim-indent-guides'
-" -- Window
 Plug 'simeji/winresizer'
-" -- Movement
 Plug 'easymotion/vim-easymotion'
-" -- git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
-" git blame の情報をバッファの右側に表示
 Plug 'APZelos/blamer.nvim'
-" -- Filer
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-" -- fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-" -- LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" -- Lint
 Plug 'dense-analysis/ale'
-" -- Common to each language
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -50,24 +35,17 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'https://github.com/wolandark/vim-live-server.git'
 Plug 'markonm/traces.vim'
-" -- HTML
 Plug 'othree/html5.vim'
 Plug 'AndrewRadev/tagalong.vim'
-" -- Sass
 Plug 'JulesWang/css.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'tpope/vim-haml'
-" -- JavaScript
-" JavaScript syntax
 Plug 'othree/yajs.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
-" EJS syntax
 Plug 'nikvdp/ejs-syntax'
-" JSON
 Plug 'elzr/vim-json'
-" -- PHP
 Plug 'captbaritone/better-indent-support-for-php-with-html'
 Plug 'hesselbom/vim-hsftp'
 Plug 'oprogramador/vim-ftp'
@@ -202,7 +180,6 @@ endif
 "====================================
 let mapleader = "\<Space>"
 
-" -- キーの無効化
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -213,46 +190,35 @@ inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 nnoremap s <Nop>
 
-" -- jキーを二度押しでESCキー
 inoremap <silent> jj <ESC>
 inoremap <silent> っｊ <ESC>
 inoremap <silent> ｊｊ <ESC>
 
-" -- Vimの終了
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
-" -- Redo
 nnoremap U <C-r>
 
-" -- 全選択
 noremap <Leader>a ggVG
 
-" カーソル位置から行末までをコピー
 nnoremap Y y$
 
-" カーソルを表示行で移動
 nnoremap k gk
 nnoremap j gj
 
-" -- Scroll
 nnoremap zk zt
 nnoremap zj zb
 
-" -- 検索ハイライトを消す
 noremap <C-n> :noh<ESC>
 
-" -- ウィンドウの分割
 noremap ss <C-w>s
 noremap sv <C-w>v
 
-" -- ウィンドウ間のカーソル移動
 noremap sk <C-w>k
 noremap sj <C-w>j
 noremap sh <C-w>h
 noremap sl <C-w>l
 
-" -- Tab
 nnoremap gh gT
 nnoremap gl gt
 
