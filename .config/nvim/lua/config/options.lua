@@ -19,3 +19,10 @@ opt.signcolumn = "yes"
 opt.termguicolors = true
 opt.clipboard = "unnamedplus"
 opt.hlsearch = true
+opt.fillchars = {
+  diff = "╱",
+}
+opt.diffopt = {
+  "internal",
+  "filler",
+}
