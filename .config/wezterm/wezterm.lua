@@ -6,6 +6,7 @@ local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
 local program_files = os.getenv("LOCALAPPDATA")
 require("on")
 
+config.term = "wezterm"
 config.keys = keys
 config.font = wezterm.font("HackGen35 Console NF", {
   weight = "Regular",
