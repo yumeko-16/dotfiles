@@ -1,0 +1,58 @@
+# Change Log
+
+
+## [0.4.4] - 2026-06-22
+### Fixed
+- Fixed trailing-space highlights desyncing between split panes showing the same file: editing in one pane now refreshes the decorations in every visible pane, so highlights no longer go missing or leave a stale sliver behind (#71)
+
+
+## [0.4.3] - 2026-06-19
+### Fixed
+- Fixed `trimOnSave` not trimming when the saved document's editor is hidden, e.g. with `files.autoSave: onFocusChange` (#76)
+- Guarded `trimOnSave` against stale edits so a concurrent edit or another save participant can no longer cause real content to be corrupted (#80)
+### Changed
+- Modernized the build: the extension is now bundled with esbuild, dependencies were refreshed, and the test suite and CI were updated
+
+
+## [0.4.2] - 2026-06-19
+### Fixed
+- Fixed a deprecation warning caused by the use of the deprecated `util.isNullOrUndefined` API
+
+
+## [0.4.1] - 2022-07-10
+### Fixed
+- Fixed an issue where changing settings would result in previously highlighted regions being permanently highlighted
+### Changed
+- `highlightCurrentLine` now considers all active cursors as current lines
+
+
+## [0.4.0] - 2022-07-08
+### Fixed
+- Fix an issue where only the first line of each block of modified lines is trimmed when `deleteModifiedLinesOnly` is set
+### Changed
+- Extension will now activate only after VSCode startup has finished to avoid VSCode startup slowdown
+
+
+## [0.3.1] - 2019-04-08
+### Changed
+- Trigger `trimOnSave` on auto-saves along with manual saves to maintain backward compatibility
+
+
+## [0.3.0] - 2019-04-06
+### Added
+- Allow specific schemes to be ignored.
+- Add options to change background and border colors of highlighting.
+- Add option to disable status bar message.
+
+### Changed
+- Only attach VSCode event listeners if current settings require them.
+- Major refactor to simplify the core extension logic.
+- Ignore `output` scheme by default
+
+### Fixed
+- Fix "Trim on Save" requiring file to be saved twice.
+- Fix error when trying to read saved document for non-file schemes.
+
+### Removed
+- Remove "Save after Trim" as current VSCode lifecycle for text editor commands does not provide a clean way to implement this feature.
+- Remove `deleteInFolder` and `deleteInFolderRecursive` functionality which was experimental.
