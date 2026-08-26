@@ -36,6 +36,7 @@ vim.pack.add({
   "https://github.com/stevearc/conform.nvim",
   "https://github.com/stevearc/oil.nvim",
   "https://github.com/tpope/vim-fugitive",
+  "https://github.com/suiramdev/cursorcli.nvim",
 })
 
 -- Plugin's code can be used directly after `add()`
@@ -53,6 +54,7 @@ require("plugins.gitsigns")
 require("plugins.gitgraph")
 require("plugins.mini.pairs")
 require("plugins.vim-better-whitespace")
+require("plugins.cursorcli")
 require("plugins.conform")
 require("plugins.babel")
 require("plugins.tree-sitter-manager")

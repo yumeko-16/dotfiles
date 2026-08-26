@@ -20,6 +20,10 @@
       "rev": "016802de402556da54c36bd7359b441266b01cdd",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "cursorcli.nvim": {
+      "rev": "b20d9fe3e0f610d8b43d11354067ad063e0f1e28",
+      "src": "https://github.com/suiramdev/cursorcli.nvim"
+    },
     "diffview.nvim": {
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"
