@@ -56,6 +56,3 @@ case ${OSTYPE} in
     alias ls='ls -F --color=auto'
     ;;
 esac
-
-# mise
-eval "$(~/.local/bin/mise activate zsh)"
