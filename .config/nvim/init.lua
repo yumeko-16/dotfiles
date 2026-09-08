@@ -37,6 +37,7 @@ vim.pack.add({
   "https://github.com/stevearc/oil.nvim",
   "https://github.com/tpope/vim-fugitive",
   "https://github.com/suiramdev/cursorcli.nvim",
+  "https://github.com/windwp/nvim-ts-autotag",
 })
 
 -- Plugin's code can be used directly after `add()`
@@ -59,5 +60,6 @@ require("plugins.cursorcli")
 require("plugins.conform")
 require("plugins.babel")
 require("plugins.tree-sitter-manager")
+require("plugins.nvim-ts-autotag")
 require("plugins.iceberg")
 require("plugins.hlslens")
