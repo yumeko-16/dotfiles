@@ -14,6 +14,7 @@ vim.pack.add({
   "https://github.com/folke/noice.nvim",
   "https://github.com/folke/snacks.nvim",
   "https://github.com/folke/which-key.nvim",
+  "https://github.com/hat0uma/csvview.nvim",
   "https://github.com/hrsh7th/cmp-buffer",
   "https://github.com/hrsh7th/cmp-nvim-lsp",
   "https://github.com/hrsh7th/cmp-path",
@@ -57,6 +58,7 @@ require("plugins.gitgraph")
 require("plugins.mini.pairs")
 require("plugins.vim-better-whitespace")
 require("plugins.cursorcli")
+require("plugins.csvview")
 require("plugins.conform")
 require("plugins.babel")
 require("plugins.tree-sitter-manager")
