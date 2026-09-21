@@ -5,6 +5,7 @@ require("config.options")
 require("config.keymaps")
 require("config.autocmds")
 require("config.filetype")
+require("config.snippets")
 
 vim.pack.add({
   "https://github.com/MunifTanjim/nui.nvim",
