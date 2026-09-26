@@ -112,10 +112,6 @@
       "rev": "de99b55a6fe8c96a69f9376f16b1d5d627a56e81",
       "src": "https://github.com/ntpeters/vim-better-whitespace"
     },
-    "vim-easymotion": {
-      "rev": "b3cfab2a6302b3b39f53d9fd2cd997e1127d7878",
-      "src": "https://github.com/easymotion/vim-easymotion"
-    },
     "vim-fugitive": {
       "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
       "src": "https://github.com/tpope/vim-fugitive"

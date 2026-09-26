@@ -11,7 +11,6 @@ vim.pack.add({
   "https://github.com/MunifTanjim/nui.nvim",
   "https://github.com/acidsugarx/babel.nvim",
   "https://github.com/cocopon/iceberg.vim",
-  "https://github.com/easymotion/vim-easymotion",
   "https://github.com/folke/noice.nvim",
   "https://github.com/folke/snacks.nvim",
   "https://github.com/folke/which-key.nvim",
@@ -48,7 +47,6 @@ require("plugins.snacks")
 require("plugins.lualine")
 require("plugins.scrollbar")
 require("plugins.oil")
-require("plugins.easymotion")
 require("plugins.mason")
 require("plugins.mason-lspconfig")
 require("plugins.nvim-cmp")
