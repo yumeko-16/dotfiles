@@ -34,6 +34,7 @@ vim.pack.add({
   "https://github.com/romus204/tree-sitter-manager.nvim",
   "https://github.com/simeji/winresizer",
   "https://github.com/sindrets/diffview.nvim",
+  "https://github.com/stevearc/conform.nvim",
   "https://github.com/stevearc/oil.nvim",
   "https://github.com/tpope/vim-fugitive",
   "https://github.com/suiramdev/cursorcli.nvim",
@@ -57,6 +58,7 @@ require("plugins.mini.pairs")
 require("plugins.vim-better-whitespace")
 require("plugins.cursorcli")
 require("plugins.csvview")
+require("plugins.conform")
 require("plugins.babel")
 require("plugins.tree-sitter-manager")
 require("plugins.nvim-ts-autotag")
