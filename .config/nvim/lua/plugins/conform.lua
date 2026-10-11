@@ -1,5 +1,10 @@
 local conform = require("conform")
 local util = require("conform.util")
+local is_win = vim.fn.has("win32") == 1
+
+local function bin_fallback(name)
+  return is_win and (name .. ".cmd") or name
+end
 
 local prettier_formatters = {
   "prettierd",
@@ -11,6 +16,13 @@ local css_formatters = {
   "prettierd",
   "prettier",
   "stylelint",
+}
+
+local prettier_bin_paths = is_win and {
+  "node_modules/.bin/prettier.cmd",
+  "node_modules/.bin/prettier",
+} or {
+  "node_modules/.bin/prettier",
 }
 
 conform.setup({
@@ -31,17 +43,11 @@ conform.setup({
 
   formatters = {
     prettierd = {
-      command = "prettierd",
+      command = bin_fallback("prettierd"),
     },
 
     prettier = {
-      command = function(_, ctx)
-        return vim.fs.find({ "node_modules/.bin/prettier" }, {
-          upward = true,
-          path = vim.fs.dirname(ctx.filename),
-          type = "file",
-        })[1] or "prettier"
-      end,
+      command = util.find_executable(prettier_bin_paths, bin_fallback("prettier")),
       args = { "--stdin-filepath", "$FILENAME" },
     },
 
@@ -49,7 +55,7 @@ conform.setup({
       command = util.find_executable({
         "node_modules/.bin/stylelint.cmd",
         "node_modules/.bin/stylelint",
-      }, vim.fn.has("win32") == 1 and "stylelint.cmd" or "stylelint"),
+      }, bin_fallback("stylelint")),
       args = {
         "--fix",
         "--stdin-filename",
