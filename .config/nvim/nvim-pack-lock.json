@@ -57,7 +57,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "8831fa150fa26492cfe135801fa498132f1491d2",
+      "rev": "e3f2349a65143ff062f0b70ee9d68d8ce35c7059",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "noice.nvim": {
@@ -105,7 +105,7 @@
       "src": "https://github.com/folke/snacks.nvim"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "d93782393d7d4b48ddbdbcb0fdff6f8cb8d7043a",
+      "rev": "27cf9c8a3767b070c22f31e92451006ee2e43540",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "vim-better-whitespace": {
