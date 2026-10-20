@@ -19,7 +19,6 @@ vim.pack.add({
   "https://github.com/hrsh7th/cmp-path",
   "https://github.com/hrsh7th/nvim-cmp",
   "https://github.com/isakbm/gitgraph.nvim",
-  "https://github.com/kevinhwang91/nvim-hlslens",
   "https://github.com/lewis6991/gitsigns.nvim",
   "https://github.com/mason-org/mason.nvim",
   "https://github.com/mason-org/mason-lspconfig.nvim",
@@ -28,7 +27,10 @@ vim.pack.add({
   "https://github.com/nvim-lualine/lualine.nvim",
   "https://github.com/nvim-mini/mini.nvim",
   "https://github.com/nvim-tree/nvim-web-devicons",
-  "https://github.com/petertriho/nvim-scrollbar",
+  {
+    src = "https://github.com/petertriho/nvim-scrollbar",
+    version = "refactor/v2",
+  },
   "https://github.com/rcarriga/nvim-notify",
   "https://github.com/rebelot/kanagawa.nvim",
   "https://github.com/romus204/tree-sitter-manager.nvim",
@@ -63,4 +65,3 @@ require("plugins.babel")
 require("plugins.tree-sitter-manager")
 require("plugins.nvim-ts-autotag")
 require("plugins.kanagawa")
-require("plugins.hlslens")

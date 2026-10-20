@@ -1,3 +1,6 @@
-require("scrollbar").setup()
-require("scrollbar.handlers.search").setup()
-require("scrollbar.handlers.gitsigns").setup()
+require("scrollbar").setup({
+  providers = {
+    search = true,
+    gitsigns = true,
+  },
+})
