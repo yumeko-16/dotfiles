@@ -37,7 +37,7 @@
       "src": "https://github.com/isakbm/gitgraph.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "fd780920613e541cbdfac41bf711583ed49f9249",
+      "rev": "683137003522aebd6948358334164a6ba2ca7cd5",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "kanagawa.nvim": {
@@ -85,7 +85,7 @@
       "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-scrollbar": {
-      "rev": "90665755de1ba5b29012419dbd844b7871bc1b6d",
+      "rev": "d2b075af708b9534f385d8601955ada6259d27b4",
       "src": "https://github.com/petertriho/nvim-scrollbar",
       "version": "'refactor/v2'"
     },
