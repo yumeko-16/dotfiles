@@ -77,7 +77,7 @@
       "src": "https://github.com/kevinhwang91/nvim-hlslens"
     },
     "nvim-lspconfig": {
-      "rev": "460bb34e7be114f1fda7815781696bc701e60f83",
+      "rev": "d8d2fda7aae57030452ce8cd6e770b1eb704514e",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
