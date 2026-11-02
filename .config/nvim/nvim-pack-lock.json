@@ -85,7 +85,7 @@
       "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-scrollbar": {
-      "rev": "d6d5031e92b26d3a5b1343a3bcddee4e26612abc",
+      "rev": "b39443d8fcae3e326ff965dea3fe7df266c8ccac",
       "src": "https://github.com/petertriho/nvim-scrollbar",
       "version": "'refactor/v2'"
     },
