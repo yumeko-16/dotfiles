@@ -37,7 +37,7 @@
       "src": "https://github.com/isakbm/gitgraph.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "dc7698f932792a764d3db95fedee26c38e728355",
+      "rev": "c0862d382a35b7b45757d8d151a6a634c09bf3ce",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "kanagawa.nvim": {
@@ -49,7 +49,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "97ccf96bb2e7adb5f82975068bd4c7307d2afa8a",
+      "rev": "761d376b5fbe6b21f659432ffadc1205c660176c",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -57,7 +57,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "174eb9b9d5d66254966b9d52ea51b996317e51f6",
+      "rev": "e199196f5ed6b085743da6a808e6c8510698cdce",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "noice.nvim": {
@@ -77,7 +77,7 @@
       "src": "https://github.com/kevinhwang91/nvim-hlslens"
     },
     "nvim-lspconfig": {
-      "rev": "6a3ddecf60e19f164390308f502e67f3199f58e8",
+      "rev": "4648fd8ba5c678d7e2db75ae44ffac269bb589d8",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/folke/snacks.nvim"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "06c90a3af8eb471f4a4ff979d681312284a8583a",
+      "rev": "05c2328f1ffd84f1944f9ff9aeb0d5032c6e5c1e",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "vim-better-whitespace": {
